@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_image_width_percent" format="float">0.1</dimen>
+    <dimen name="item_image_barier_percent" format="float">0.115</dimen>
+
+
+</resources>

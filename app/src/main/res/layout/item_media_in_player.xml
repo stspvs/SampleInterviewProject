@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="1dp"
+        app:cardBackgroundColor="@color/default_card_background"
+        app:cardElevation="@dimen/card_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_media_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/contd_item_media_music_image"
+        android:elevation="@dimen/card_elevation_elements"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintWidth_percent="@dimen/item_image_width_percent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@android:drawable/screen_background_light" />
+
+    <ImageView
+        android:id="@+id/iv_media_control"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.8"
+        android:contentDescription="@string/contd_item_media_control_play"
+        android:elevation="@dimen/card_elevation_elements"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icv_play"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_media_image"
+        app:layout_constraintEnd_toEndOf="@+id/iv_media_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_media_image"
+        app:layout_constraintTop_toTopOf="@+id/iv_media_image" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/contd_item_media_music_title"
+        android:elevation="@dimen/card_elevation_elements"
+        android:textColor="@color/colorBlack2"
+        android:textSize="@dimen/tsize_item_music_title"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toTopOf="@+id/tv_artist"
+        app:layout_constraintEnd_toEndOf="@+id/cv_bg"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/iv_media_image"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Title"  />
+
+    <TextView
+        android:id="@+id/tv_artist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/contd_item_media_music_artist"
+        android:elevation="@dimen/card_elevation_elements"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/colorBlack3"
+        android:textSize="@dimen/tsize_item_music_artist"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_media_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        tools:text="subtitle" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/item_image_barier_percent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,27 @@
+<resources>
+  <!--  <string name="app_name">Проигрыватель Sound Bound</string>
+    <string name="notification_channel_name">Sound_Bound_Channel</string>
+
+    <string name="play">Проиграть</string>
+    <string name="pause">Пауза</string>
+    <string name="stop">Стоп</string>
+
+    <string name="previous">Предыдущий</string>
+    <string name="next">Следующий</string>
+
+    <string name="contd_item_media_music_image">логотип</string>
+    <string name="contd_item_media_music_title">название</string>
+    <string name="contd_item_media_music_artist">исполнитель</string>
+    <string name="contd_item_media_control_play">проиграть</string>
+    <string name="contd_item_media_control_pause">пауза</string>
+
+
+    <string name="btnOk">принять</string>
+    <string name="btnCancel">отмена</string>
+
+
+    <string name="msg_request_read_sd_explanation_open_list_media">Для того что бы отобразить список медиа файлов вы должны дать разрешение для чтения файлов</string>
+    <string name="msg_request_read_sd_denied_read_list_media">Приложение не может открыть список медиа файлов без доступа к памяти устройства. Вы можете выдать разрешение в настройках устройства.</string>
+    <string name="err_failed_to_open_list_media">Не удалось открыть список файлов медиа.</string>
+-->
+</resources>

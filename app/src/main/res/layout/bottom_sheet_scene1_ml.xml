@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.motion.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    app:layoutDescription="@xml/scene_play">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="@dimen/bottom_player_image_size"
+        android:layout_height="@dimen/bottom_player_image_size"
+        android:src="@drawable/bg_main"
+        android:contentDescription="@string/content_background_bot_page"
+        app:layout_constraintBottom_toBottomOf="@+id/sbProgress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_playback" />
+
+    <ImageView
+        android:id="@+id/iv_bg_controls_gradient"
+        android:layout_width="@dimen/bottom_player_gradient_size"
+        android:layout_height="@dimen/bottom_player_gradient_size"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/content_background_gradient_bot_page"
+        android:src="@drawable/bg_gradient_scene_full_play"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_playback"
+        app:layout_constraintEnd_toEndOf="@+id/iv_playback"
+        app:layout_constraintStart_toStartOf="@+id/iv_playback"
+        app:layout_constraintTop_toTopOf="@+id/iv_playback" />
+
+    <ImageView
+        android:id="@+id/iv_playback"
+        android:layout_width="@dimen/bottom_player_image_size"
+        android:layout_height="@dimen/bottom_player_image_size"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/icv_play"
+        android:contentDescription="@string/content_playback_bot_page"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/iv_bg_skip_prev_gradient"
+        android:layout_width="@dimen/bottom_player_gradient_size"
+        android:layout_height="@dimen/bottom_player_gradient_size"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/content_background_gradient_bot_page"
+        android:src="@drawable/bg_gradient_scene_full_play"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_skip_previous"
+        app:layout_constraintEnd_toEndOf="@+id/iv_skip_previous"
+        app:layout_constraintStart_toStartOf="@+id/iv_skip_previous"
+        app:layout_constraintTop_toTopOf="@+id/iv_skip_previous" />
+
+    <ImageView
+        android:id="@+id/iv_skip_previous"
+        android:layout_width="@dimen/bottom_player_image_size"
+        android:layout_height="@dimen/bottom_player_image_size"
+        android:src="@drawable/icv_previous"
+        android:visibility="gone"
+        android:contentDescription="@string/content_skip_prev_bot_page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/ivBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/iv_bg_skip_next_gradient"
+        android:layout_width="@dimen/bottom_player_gradient_size"
+        android:layout_height="@dimen/bottom_player_gradient_size"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/content_background_gradient_bot_page"
+        android:src="@drawable/bg_gradient_scene_full_play"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_skip_next"
+        app:layout_constraintEnd_toEndOf="@+id/iv_skip_next"
+        app:layout_constraintStart_toStartOf="@+id/iv_skip_next"
+        app:layout_constraintTop_toTopOf="@+id/iv_skip_next" />
+    <ImageView
+        android:id="@+id/iv_skip_next"
+        android:layout_width="@dimen/bottom_player_image_size"
+        android:layout_height="@dimen/bottom_player_image_size"
+        android:src="@drawable/icv_next"
+        android:visibility="gone"
+        android:contentDescription="@string/content_skip_next_bot_page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/ivBackground"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@color/textColorBottomPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_playback"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/tv_subtitle_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/textColorBottomPage"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_playback"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_bt"
+        tools:text="Subtitle" />
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textSize="12sp"
+        android:textColor="@color/textColorBottomPage"
+        app:layout_constraintStart_toEndOf="@+id/iv_playback"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_bt"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/tv_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text=""
+        android:textSize="12sp"
+        android:textColor="@color/textColorBottomPage"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_start"
+        tools:text="1" />
+
+    <SeekBar
+        android:id="@+id/sbProgress"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivBackground"
+        app:layout_constraintTop_toBottomOf="@+id/tv_start" />
+
+</android.support.constraint.motion.MotionLayout>

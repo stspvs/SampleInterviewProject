@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Sound Bound</string>
+    <string name="notification_channel_name">Sound_Bound_Channel</string>
+
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+
+    <string name="contd_item_media_music_image">music image</string>
+    <string name="contd_item_media_music_title">music title</string>
+    <string name="contd_item_media_music_artist">music artist</string>
+    <string name="contd_item_media_control_play">play media</string>
+    <string name="contd_item_media_control_pause">pause media</string>
+
+
+    <string name="btnOk">ok</string>
+    <string name="btnCancel">cancel</string>
+
+
+    <string name="msg_request_read_sd_explanation_open_list_media">To show media list you should give the permission to the app to read files</string>
+    <string name="msg_request_read_sd_denied_read_list_media">The application cannot open the media list without access to the phone\'s memory. You can give the permission in the phone settings</string>
+    <string name="err_failed_to_open_list_media">Cannot open the list media.</string>
+
+    <string name="error_no_metadata">Metadata not found for file</string>
+    <string name="casting_to_device">Casting to device %s</string>
+    <string name="stop_casting">Stop casting</string>
+    <string name="label_previous">Previous</string>
+    <string name="label_next">Next</string>
+    <string name="label_pause">Pause</string>
+    <string name="label_play">Play</string>
+    <string name="notification_channel">notification channel</string>
+    <string name="notification_channel_description">notification channel description</string>
+    <string name="queue_title">queue</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tsize_item_music_title">20sp</dimen>
+    <dimen name="tsize_item_music_artist">14sp</dimen>
+    <dimen name="default_prevew_size">60dp</dimen>
+    <dimen name="bottom_player_image_size">48dp</dimen>
+    <dimen name="bottom_player_gradient_size">150dp</dimen>
+    <dimen name="bottom_player_gradient_radius">150</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_elevation_elements">5dp</dimen>
+    <dimen name="item_image_width_percent" format="float">0.2</dimen>
+    <dimen name="item_image_barier_percent" format="float">0.22</dimen>
+    <dimen name="height_bottom_page">130dp</dimen>
+</resources>
